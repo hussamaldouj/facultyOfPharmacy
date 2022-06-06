@@ -8,12 +8,13 @@ body{
 }
 .nav_bar{
     height: 175px;
-/*     background-color: #160d1473; */
-    background-color: #0a58ca; 
+    background-color: #160d1473;
+/*     background-color: #0a58ca;  */
     position: sticky;
     top: 15px;
     z-index: 2;
     margin-top: 0px;
+    border-radius: 15px;
     box-shadow: -4px -4px 10px #160d1473, 4px 4px 10px;
     backdrop-filter: blur(10px);
 }
@@ -79,6 +80,7 @@ list-style-type: none;
     flex-direction: row-reverse;
     height: 480px;
     margin-top: 0px;
+    border-radius: 15px;
 }
 .col_6{
     position: relative;
@@ -86,13 +88,14 @@ list-style-type: none;
     top: 0%;
     min-height: 1px;
     padding-right: 3px;
-    box-shadow:0px 1px 10px #160d1473, -4px -4px 4px;
+    border-radius: 15px;
 }
 .col_12{
     position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 3px;
+    border-radius: 15px;
     /*box-shadow:0px 1px 10px #160d1473, -4px -4px 4px;*/
 }
 .col_6 .code_grid{
@@ -104,6 +107,7 @@ list-style-type: none;
     grid-template-columns: repeat(10,10%);
     grid-template-rows: repeat(10,10%);
     justify-items: center;
+    border-radius: 15px;
 }
 .col_6 .code_grid p{
     margin-block-start: 30px;

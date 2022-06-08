@@ -1,9 +1,5 @@
 .nav_bar{
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    height: 175px;
+    height: 105px;
     background-color: #160d1473;
     position: sticky;
     top: 15px;
@@ -22,7 +18,7 @@
 .dropdown{
     position: fixed;
 list-style-type: none;
-    top: 36%;
+    top: 30%;
     right: 2%;
 }
 .dropdown-content {
@@ -84,7 +80,7 @@ list-style-type: none;
         color: #d9892c ;
         height: 55px;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 50px;
         display: flex;
     }
     ul li a i{

@@ -25,6 +25,7 @@
   font-size: 20px;
   font-weight: 800;
   text-align: justify;
+  align-self: center;
   letter-spacing: 1px;
   padding: 6px;
 }
@@ -121,10 +122,10 @@
   ". details details details details details"
   " . . btn btn btn btn";
 }
-.cont-13 .code_grid{
+.cont-13 .code_grid,.cont-7 .code_grid{
       grid-template-areas: 
       ". head head ."
-      ". . . ."
+      "main main main main"
       "main main main main"
       "main main main main"
       "main main main main"

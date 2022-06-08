@@ -14,8 +14,8 @@ body{
   top: 20px;
   grid-template-columns: 10fr 10fr 10fr 10fr;
   grid-template-rows: 40vh repeat(2,55vh) repeat(1,75vh)
-                      repeat(1,64vh) repeat(1,55vh) repeat(1,75vh)
-                       repeat(3,64vh) 15vh;
+                      repeat(1,64vh) repeat(1,55vh) repeat(1,80vh)
+                       repeat(1,40vh) 15vh;
   grid-template-areas:
   "col-1 col-1 col-1 col-1"
   "col-2 col-2 col-3 col-3"
@@ -137,11 +137,42 @@ body{
   width: 100%;
   height: 100%;
 }
+.img_col_6{
+  background: url(/img/logo-student.png) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  grid-area: pic-6;
+}
+.img_col_7{
+  background: url(/img/teacher.png) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  grid-area: pic-7;
+}
+.img_col_8{
+  background: url(/img/graduation.png) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  grid-area: pic-8;
+}
+.h-1{
+  grid-area: h-1;
+}
+.h-2{
+  grid-area: h-2;
+}
+.h-3{
+  grid-area: h-3;
+}
 @media only screen and (max-width: 1200px){
   .container {
+    grid-template-columns: 10fr 10fr 10fr 10fr;
     grid-template-rows: 40vh repeat(2,55vh) repeat(1,62vh)
                         repeat(1,55vh) repeat(1,80vh) repeat(1,68vh)
-                         repeat(1,75vh) repeat(3,55vh) 15vh;
+                         repeat(1,80vh) repeat(1,40vh) 15vh;
     grid-template-areas:
     "col-1 col-1 col-1 col-1"
     "col-2 col-2 col-3 col-3"
@@ -151,6 +182,7 @@ body{
     "col-9 col-9 col-8 col-8"
     "col-10 col-10 col-11 col-11"
     "col-12 col-12 col-13 col-13"
+    "col-14 col-14 col-14 col-14"
      ;
   }
   .cont-9 .code_grid .details{
@@ -159,12 +191,13 @@ body{
   .cont-9 .code_grid .sign{
     margin-block-start: 20px;
   }
+  
 }
 @media only screen and (max-width: 991px){
   .container {
     grid-template-rows: 40vh repeat(2,55vh) repeat(1,62vh)
                         repeat(1,55vh) repeat(1,80vh) repeat(1,70vh)
-                         repeat(1,90vh) repeat(3,55vh) 15vh;
+                         repeat(1,87vh) repeat(3,40vh) 15vh;
     grid-template-areas:
     "col-1 col-1 col-1 col-1"
     "col-2 col-2 col-3 col-3"
@@ -174,6 +207,7 @@ body{
     "col-9 col-9 col-8 col-8"
     "col-10 col-10 col-11 col-11"
     "col-12 col-12 col-13 col-13"
+    "col-14 col-14 col-14 col-14"
      ;
   }
 .cont-1::after{
@@ -197,7 +231,8 @@ body{
     "col-10"
     "col-11"
     "col-12"
-    "col-13" ;
+    "col-13"
+    "col-14" ;
     margin-right: 10px;
     gap: 1vh;
   }
@@ -208,7 +243,7 @@ body{
     grid-template-rows: 40vh repeat(3,55vh) 
     repeat(1,44vh) repeat(1,55vh) repeat(1,80vh) repeat(1,55vh) 
     repeat(1,66vh) repeat(2,55vh) repeat(1,70vh) 
-    repeat(7,55vh) 15vh;
+    repeat(1,55vh) repeat(1,70vh) repeat(3,55vh) 15vh;
     grid-template-areas:
     "col-1"
     "col-2" 
@@ -222,11 +257,31 @@ body{
     "col-10"
     "col-11"
     "col-12"
-    "col-13" ;
+    "col-13"
+    "col-14" ;
     margin-right: 10px;
     gap: 1vh;
   }
- 
+  .cont-14 .code_grid {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(14,1fr);
+    grid-template-areas: 
+    "head head"
+    ". ."
+    "pic-6 pic-6"
+    "pic-6 pic-6"
+    "pic-6 pic-6"
+    "h-1 h-1"
+    "pic-7 pic-7"
+    "pic-7 pic-7"
+    "pic-7 pic-7"
+    "h-2 h-2"
+    "pic-8  pic-8"
+    "pic-8  pic-8"
+    "pic-8  pic-8"
+    "h-3 h-3"
+    ;
+  }
   .cont-7 .code_grid .main{
     height: 66vh;
   }
@@ -234,76 +289,3 @@ body{
     height: 40vh;
   }
 }
- /*@media (min-width: 576px) {
- .container {
-      max-width: 540px;
-      margin-right: 14%;
-      margin-left: 14%;
-    }
-    .row{
-      height: 1000px;
-  }
-  }
-  @media (min-width: 768px) {
-.container {
-      max-width: 720px;
-      margin-right: 12%;
-      margin-left: 12%;
-    }
-  }
-  @media (min-width: 992px) {
-.container {
-      height: auto;
-      max-width: 960px;
-      margin-right: 10%;
-      margin-left: 10%;
-    }
-  }
-  @media (min-width: 1200px) {
-.main{
-  background-color: #191932;
-  grid-area: main;
-  margin-block-start: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  color:rgba(255, 255, 255, 0.582);
-  font-size: 20px;
-  font-weight: 800;
-  text-align: justify;
-  letter-spacing: 1px;
-  padding: 6px;
-}
-.details{
-  background-color: #191932;
-  grid-area: details;
-  margin-block-start: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  color:#fff;
-  font-size: 20px;
-  font-weight: 800;
-  text-align: justify;
-  letter-spacing: 1px;
-  padding: 6px;
-}
-  }
-  @media (min-width: 1400px) {
-.container {
-      max-width: 1520px;
-      margin-right: 6%;
-      margin-left: 6%;
-    }
-  } */
-/*end container*/
-/* @media only screen and (max-width: 1200px){
-  .row{
-      flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 991px){
-    .row{
-        flex-wrap: wrap;
-    }
-}
-
- */

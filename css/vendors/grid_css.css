@@ -106,7 +106,7 @@
   letter-spacing: 1px;
   padding: 6px;
 }
-.cont-11 .code_grid,.cont-12 .code_grid,.cont-14 .code_grid {
+.cont-11 .code_grid,.cont-12 .code_grid {
   grid-template-columns: repeat(6,1fr);
   grid-template-rows: repeat(10,1fr);
   grid-template-areas: 
@@ -120,4 +120,32 @@
   ". details details details details details"
   ". details details details details details"
   " . . btn btn btn btn";
+}
+.cont-13 .code_grid{
+      grid-template-areas: 
+      ". head head ."
+      ". . . ."
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      " . . btn btn";
+      justify-items: center;
+}
+@media only screen and (min-width: 575px){
+  .cont-14 .code_grid {
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: 
+    ". . head head . ."
+    ". . . . .  ."
+    "pic-6 pic-6 pic-7 pic-7 pic-8  pic-8"
+    "pic-6 pic-6 pic-7 pic-7 pic-8  pic-8"
+    "pic-6 pic-6 pic-7 pic-7 pic-8  pic-8"
+    "pic-6 pic-6 pic-7 pic-7 pic-8  pic-8"
+    "pic-6 pic-6 pic-7 pic-7 pic-8  pic-8"
+    "h-1 h-1 h-2 h-2 h-3  h-3"
+    ". . . . .  .";
+  }
 }

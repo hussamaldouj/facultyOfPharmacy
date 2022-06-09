@@ -13,9 +13,9 @@ body{
   position: relative;
   top: 20px;
   grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr;
-  grid-template-rows: 40vh repeat(2,55vh) repeat(1,minmax(62vh,90vh))
-                      repeat(1,minmax(55vh,65vh)) repeat(1,minmax(55vh,60vh)) repeat(1,minmax(68vh,81vh))
-                       repeat(1,40vh) repeat(1,65vh) 15vh;              
+  grid-template-rows: 40vh  repeat(4,min-content)
+                       repeat(1,minmax(55vh,60vh)) repeat(1,minmax(68vh,81vh))
+                       repeat(1,45vh) repeat(1,max-content) 15vh;              
   grid-template-areas:
   "col-1 col-1 col-1 col-1 col-15 col-15"
   "col-2 col-2 col-3 col-3 col-15 col-15"
@@ -36,6 +36,98 @@ body{
   border-radius: 15px;
   box-shadow: -4px -4px 10px #160d1473, 4px 4px 10px;
 }
+@media only screen and (max-width: 1200px){
+  .container {
+    grid-template-columns: 10fr 10fr 10fr 10fr;
+    grid-template-rows: 40vh repeat(5,min-content) repeat(1,minmax(55vh,70vh)) repeat(1,80vh)
+    repeat(1,50vh) repeat(2,min-content) 15vh;
+    grid-template-areas:
+    "col-1 col-1 col-1 col-1"
+    "col-2 col-2 col-3 col-3"
+    "col-4 col-4 col-5 col-5"
+    "col-6 col-6 col-6 col-6"
+    "col-7 col-7 col-7 col-7"
+    "col-9 col-9 col-8 col-8"
+    "col-10 col-10 col-11 col-11"
+    "col-12 col-12 col-13 col-13"
+    "col-14 col-14 col-14 col-14"
+    "col-15 col-15 col-15 col-15"
+    "col-16 col-16 col-16 col-16"
+     ;
+  }
+}
+@media only screen and (max-width: 991px){
+  .container {
+    grid-template-rows: 40vh repeat(5,min-content) repeat(1,minmax(55vh,68vh)) repeat(1,87vh)
+   repeat(2,40vh) repeat(1,125vh) 15vh;
+    grid-template-areas:
+    "col-1 col-1 col-1 col-1"
+    "col-2 col-2 col-3 col-3"
+    "col-4 col-4 col-5 col-5"
+    "col-6 col-6 col-6 col-6"
+    "col-7 col-7 col-7 col-7"
+    "col-9 col-9 col-8 col-8"
+    "col-10 col-10 col-11 col-11"
+    "col-12 col-12 col-13 col-13"
+    "col-14 col-14 col-14 col-14"
+    "col-15 col-15 col-15 col-15"
+    "col-16 col-16 col-16 col-16"
+     ;
+  }
+}
+@media only screen and (max-width: 768px){
+  .container{
+    grid-template-columns: 88vw ;
+    grid-template-rows: 40vh repeat(3,55vh) repeat(5,min-content)
+                        repeat(2,55vh) repeat(1,min-content) repeat(3,55vh)
+                        repeat(1,115vh) 15vh;
+    grid-template-areas:
+    "col-1"
+    "col-2" 
+    "col-3"
+    "col-4"
+    "col-5" 
+    "col-6" 
+    "col-7"
+    "col-8"
+    "col-9"
+    "col-10"
+    "col-11"
+    "col-12"
+    "col-13"
+    "col-14"
+    "col-15"
+    "col-16" ;
+    margin-right: 10px;
+    gap: 1vh;
+  }
+}
+@media only screen and (max-width: 575px){
+  .container{
+    grid-template-columns: 88vw ;
+    grid-template-rows: 40vh repeat(2,50vh) repeat(2,min-content) repeat(1,55vh) repeat(1,min-content) repeat(1,55vh) 
+    repeat(1,min-content) repeat(2,55vh) repeat(6,min-content)  15vh;
+    grid-template-areas:
+    "col-1"
+    "col-2" 
+    "col-3"
+    "col-4"
+    "col-5" 
+    "col-6" 
+    "col-7"
+    "col-8"
+    "col-9"
+    "col-10"
+    "col-11"
+    "col-12"
+    "col-13"
+    "col-14"
+    "col-15"
+    "col-16" ;
+    margin-right: 10px;
+    gap: 1vh;
+  }
+}
 .content{
   width: 100%;
   margin-top: 10px;
@@ -48,52 +140,6 @@ body{
 }
 .cont-1{
   grid-area: col-1;
-}
-.cont-2{
-  grid-area: col-2;
-}
-.cont-3{
-  grid-area: col-3;
-}
-.cont-4{
-  grid-area: col-4;
-}
-.cont-5{
-  grid-area: col-5;
-}
-.cont-6{
-  grid-area: col-6;
-}
-.cont-7{
-  grid-area: col-7;
-}
-.cont-8{
-  grid-area: col-8;
-}
-.cont-9{
-  grid-area: col-9;
-}
-.cont-10{
-  grid-area: col-10;
-}
-.cont-11{
-  grid-area: col-11;
-}
-.cont-12{
-  grid-area: col-12;
-}
-.cont-13{
-  grid-area: col-13;
-}
-.cont-14{
-  grid-area: col-14;
-}
-.cont-15{
-  grid-area: col-15;
-}
-.cont-16{
-  background: url(/img/map-color-overlay.png) no-repeat center center;
-  grid-area: col-16;
 }
 .cont-1{
   background: url(/img/img-18.jpg) no-repeat center center fixed;
@@ -109,21 +155,23 @@ body{
   display: block;
   text-align: center;
   position: relative;
-  background-color: #0a0d108c;
-}
-.center_1{
-  width: 100%;
-  margin-top: 10px;
+  background-color: #0a0d10ba;
 }
 .cont-1::after{
   position: relative;
   bottom: 20%;
   margin-right: 70px;
   margin-left: 70px;
-  letter-spacing: 3px;
-  font-size: 25px;
+  letter-spacing: normal;
+  font-size: 24px;
   content: "جامعة حلب في المناطق المحررة كلية الصيدلة ترحب بكم في موقعها الرسمي";
   color: #fff;
+}
+.cont-2{
+  grid-area: col-2;
+}
+.cont-3{
+  grid-area: col-3;
 }
 .img_col_2{
   background: url(/img/logo_pharm.png) no-repeat center center;
@@ -131,11 +179,26 @@ body{
   width: 100%;
   height: 100%;
 }
+.cont-4{
+  grid-area: col-4;
+}
+.cont-5{
+  grid-area: col-5;
+}
+.cont-6{
+  grid-area: col-6;
+}
 .img_col_3{
   background: url(/img/bg_2.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+.cont-7{
+  grid-area: col-7;
+}
+.cont-8{
+  grid-area: col-8;
 }
 .img_col_4{
   background: url(/img/faculty_senior.jpg) no-repeat center center;
@@ -143,11 +206,29 @@ body{
   width: 100%;
   height: 100%;
 }
+.cont-9{
+  grid-area: col-9;
+}
+.cont-10{
+  grid-area: col-10;
+}
 .img_col_5{
   background: url(/img/bg_1.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+.cont-11{
+  grid-area: col-11;
+}
+.cont-12{
+  grid-area: col-12;
+}
+.cont-13{
+  grid-area: col-13;
+}
+.cont-14{
+  grid-area: col-14;
 }
 .img_col_6{
   background: url(/img/logo-student.png) no-repeat center center;
@@ -178,6 +259,17 @@ body{
 }
 .h-3{
   grid-area: h-3;
+}
+.cont-15{
+  grid-area: col-15;
+}
+.cont-16{
+  background: url(/img/map-color-overlay.png) no-repeat center center;
+  grid-area: col-16;
+}
+.center_1{
+  width: 100%;
+  margin-top: 10px;
 }
 .row {
   display: flex;
@@ -331,10 +423,10 @@ align-self: center;
   background-color: #d63384;
   color: #fff;
   width: 160px;
-  height: 25px;
+  height: 21px;
   padding: 10px 0px;
   margin-block-start: 15px;
-  font-size: 24px;
+  font-size: 21px;
   text-align: center;
   margin-right: 0px !important;
   font-weight: bold;
@@ -345,9 +437,9 @@ align-self: center;
   background-color: #6610f2;
   color: #fff;
   width: 160px;
-  height: 25px;
-  padding: 10px 0px;
-  font-size: 24px;
+  height: 22px;
+  padding: 8px 0px;
+  font-size: 22px;
   text-align: center;
   margin-right: 0px !important;
   font-weight: bold;
@@ -398,7 +490,6 @@ align-self: center;
 }
 .cont-11 .code_grid,.cont-12 .code_grid {
   grid-template-columns: repeat(6,1fr);
-  grid-template-rows: repeat(10,1fr);
   grid-template-areas: 
   ". . head head . ."
   "main main main main main main"
@@ -428,52 +519,10 @@ align-self: center;
 }
 
 @media only screen and (max-width: 1200px){
-  .container {
-    grid-template-columns: 10fr 10fr 10fr 10fr;
-    grid-template-rows: 40vh repeat(2,55vh) repeat(1,minmax(62vh,90vh))
-    repeat(1,minmax(55vh,65vh)) repeat(1,minmax(55vh,80vh)) repeat(1,minmax(55vh,70vh)) repeat(1,80vh)
-    repeat(1,40vh) repeat(2,65vh) 15vh;
-    grid-template-areas:
-    "col-1 col-1 col-1 col-1"
-    "col-2 col-2 col-3 col-3"
-    "col-4 col-4 col-5 col-5"
-    "col-6 col-6 col-6 col-6"
-    "col-7 col-7 col-7 col-7"
-    "col-9 col-9 col-8 col-8"
-    "col-10 col-10 col-11 col-11"
-    "col-12 col-12 col-13 col-13"
-    "col-14 col-14 col-14 col-14"
-    "col-15 col-15 col-15 col-15"
-    "col-16 col-16 col-16 col-16"
-     ;
-  }
-  .cont-9 .code_grid .details{
-    margin-block-start: 110px;
-  }
-  .cont-9 .code_grid .sign{
-    margin-block-start: 20px;
-  }
   
 }
 @media only screen and (max-width: 991px){
-  .container {
-    grid-template-rows: 40vh repeat(2,55vh) repeat(1,minmax(62vh,90vh))
-    repeat(1,minmax(55vh,65vh)) repeat(1,minmax(55vh,85vh)) repeat(1,minmax(55vh,60vh)) repeat(1,87vh)
-   repeat(2,40vh) repeat(1,125vh) 15vh;
-    grid-template-areas:
-    "col-1 col-1 col-1 col-1"
-    "col-2 col-2 col-3 col-3"
-    "col-4 col-4 col-5 col-5"
-    "col-6 col-6 col-6 col-6"
-    "col-7 col-7 col-7 col-7"
-    "col-9 col-9 col-8 col-8"
-    "col-10 col-10 col-11 col-11"
-    "col-12 col-12 col-13 col-13"
-    "col-14 col-14 col-14 col-14"
-    "col-15 col-15 col-15 col-15"
-    "col-16 col-16 col-16 col-16"
-     ;
-  }
+
 .cont-1::after{
   font-size: 20px;
 }
@@ -490,61 +539,8 @@ align-self: center;
   padding-left: 15px;
 }
 }
-@media only screen and (max-width: 768px){
-  .container{
-    grid-template-columns: 88vw ;
-    grid-template-rows: 40vh repeat(4,55vh) repeat(1,62vh)
-                        repeat(1,75vh) repeat(1,55vh) repeat(1,66vh)
-                        repeat(2,55vh) repeat(1,65vh) repeat(3,55vh)
-                        repeat(1,115vh) 15vh;
-    grid-template-areas:
-    "col-1"
-    "col-2" 
-    "col-3"
-    "col-4"
-    "col-5" 
-    "col-6" 
-    "col-7"
-    "col-8"
-    "col-9"
-    "col-10"
-    "col-11"
-    "col-12"
-    "col-13"
-    "col-14"
-    "col-15"
-    "col-16" ;
-    margin-right: 10px;
-    gap: 1vh;
-  }
-}
+
 @media only screen and (max-width: 575px){
-  .container{
-    grid-template-columns: 88vw ;
-    grid-template-rows: 40vh repeat(3,55vh) 
-    repeat(1,44vh) repeat(1,55vh) repeat(1,80vh) repeat(1,55vh) 
-    repeat(1,66vh) repeat(2,55vh) repeat(1,70vh) 
-    repeat(1,55vh) repeat(1,70vh) repeat(1,44vh) repeat(1,100vh) 15vh;
-    grid-template-areas:
-    "col-1"
-    "col-2" 
-    "col-3"
-    "col-4"
-    "col-5" 
-    "col-6" 
-    "col-7"
-    "col-8"
-    "col-9"
-    "col-10"
-    "col-11"
-    "col-12"
-    "col-13"
-    "col-14"
-    "col-15"
-    "col-16" ;
-    margin-right: 10px;
-    gap: 1vh;
-  }
   .cont-14 .code_grid {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(14,1fr);
@@ -564,12 +560,6 @@ align-self: center;
     "pic-8  pic-8"
     "h-3 h-3"
     ;
-  }
-  .cont-7 .code_grid .main{
-    height: 66vh;
-  }
-  .cont-13 .code_grid .main{
-    height: 40vh;
   }
 }
 @media only screen and (min-width: 575px){

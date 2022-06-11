@@ -4,7 +4,7 @@ body{
     display: block;
     direction: rtl;
     position: relative;
-    font-family:'Times New Roman', Times, serif,cursive;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 /*start container*/
@@ -39,7 +39,7 @@ body{
 @media only screen and (max-width: 1200px){
   .container {
     grid-template-columns: 10fr 10fr 10fr 10fr;
-    grid-template-rows: 40vh repeat(5,min-content) repeat(1,minmax(55vh,70vh)) repeat(1,80vh)
+    grid-template-rows: 40vh repeat(7,min-content)
     repeat(1,50vh) repeat(2,min-content) 15vh;
     grid-template-areas:
     "col-1 col-1 col-1 col-1"
@@ -58,8 +58,8 @@ body{
 }
 @media only screen and (max-width: 991px){
   .container {
-    grid-template-rows: 40vh repeat(5,min-content) repeat(1,minmax(55vh,68vh)) repeat(1,87vh)
-   repeat(2,40vh) repeat(1,125vh) 15vh;
+    grid-template-rows: 40vh repeat(7,min-content)
+   repeat(2,48vh) repeat(1,min-content) 15vh;
     grid-template-areas:
     "col-1 col-1 col-1 col-1"
     "col-2 col-2 col-3 col-3"
@@ -80,7 +80,7 @@ body{
     grid-template-columns: 88vw ;
     grid-template-rows: 40vh repeat(3,55vh) repeat(5,min-content)
                         repeat(2,55vh) repeat(1,min-content) repeat(3,55vh)
-                        repeat(1,115vh) 15vh;
+                        repeat(1,min-content) 15vh;
     grid-template-areas:
     "col-1"
     "col-2" 
@@ -105,8 +105,8 @@ body{
 @media only screen and (max-width: 575px){
   .container{
     grid-template-columns: 88vw ;
-    grid-template-rows: 40vh repeat(2,50vh) repeat(2,min-content) repeat(1,55vh) repeat(1,min-content) repeat(1,55vh) 
-    repeat(1,min-content) repeat(2,55vh) repeat(6,min-content)  15vh;
+    grid-template-rows: 40vh repeat(1,min-content) repeat(1,50vh) repeat(2,min-content) repeat(1,55vh) repeat(1,min-content) repeat(1,55vh) 
+    repeat(1,min-content) repeat(1,55vh) repeat(1,min-content) repeat(6,min-content)  15vh;
     grid-template-areas:
     "col-1"
     "col-2" 
@@ -156,16 +156,6 @@ body{
   text-align: center;
   position: relative;
   background-color: #0a0d10ba;
-}
-.cont-1::after{
-  position: relative;
-  bottom: 20%;
-  margin-right: 70px;
-  margin-left: 70px;
-  letter-spacing: normal;
-  font-size: 24px;
-  content: "جامعة حلب في المناطق المحررة كلية الصيدلة ترحب بكم في موقعها الرسمي";
-  color: #fff;
 }
 .cont-2{
   grid-area: col-2;
@@ -253,12 +243,15 @@ body{
 }
 .h-1{
   grid-area: h-1;
+  color: #fff;
 }
 .h-2{
   grid-area: h-2;
+  color: #fff;
 }
 .h-3{
   grid-area: h-3;
+  color: #fff;
 }
 .cont-15{
   grid-area: col-15;
@@ -309,7 +302,7 @@ body{
   flex-direction: column;
 }
 .contact-icon i {
-  color: #227cfd;
+  color: #03a9f4;
   font-size: 24px;
   text-align: center;
   width: 70px;
@@ -357,17 +350,22 @@ body{
     transition: border-color .35s ease-in-out,box-shadow .35s ease-in-out;
 }
 .btn-contact{
-  background-color: #6610f2;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: #03a9f4;
+  background-color: #03a9f4;
   color: #fff;
   width: 160px;
   height: 40px;
   padding: 5px 0px;
+  display: block;
   font-size: 24px;
   text-align: center;
   margin-right: 0px !important;
   font-weight: bold;
   border-radius: 20px;
   margin-top: 20px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
 }
 .code_grid{
   width: 100%;
@@ -402,6 +400,7 @@ body{
   letter-spacing: 1px;
   padding-left: 6px;
   padding-right:6px ;
+  font-family:"Araboto", sans-serif 
 }
 .cont-5 .main,.cont-13 .main,.cont-7 .main{
 align-self: center;
@@ -418,6 +417,7 @@ align-self: center;
   letter-spacing: 1px;
   padding-left: 6px;
   padding-right:6px ;
+  font-family:"Araboto", sans-serif 
 }
 .icon-more{
   background-color: #d63384;
@@ -434,7 +434,7 @@ align-self: center;
   grid-area: head;
 }
 .btn-more{
-  background-color: #6610f2;
+  background-color: #03a9f4;
   color: #fff;
   width: 160px;
   height: 22px;

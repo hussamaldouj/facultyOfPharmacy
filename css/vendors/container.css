@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body{
     min-height: 100vh;
     background: #191932;
     display: block;
     direction: rtl;
     position: relative;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Amiri'!important;
 }
 
 /*start container*/
@@ -366,6 +368,7 @@ body{
   margin-top: 20px;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  font-family:'Amiri'!important;
 }
 .code_grid{
   width: 100%;
@@ -400,7 +403,7 @@ body{
   letter-spacing: 1px;
   padding-left: 6px;
   padding-right:6px ;
-  font-family:'Times New Roman'!important; 
+  font-family:'Amiri'!important;
 }
 .cont-5 .main,.cont-13 .main,.cont-7 .main{
 align-self: center;
@@ -417,7 +420,7 @@ align-self: center;
   letter-spacing: 1px;
   padding-left: 6px;
   padding-right:6px ;
-  font-family:'Times New Roman'!important;
+  font-family:'Amiri'!important;
 }
 .icon-more{
   background-color: #d63384;
@@ -431,11 +434,13 @@ align-self: center;
   margin-right: 0px !important;
   font-weight: bold;
   border-radius: 20px;
+  font-family:'Amiri'!important;
   grid-area: head;
 }
 .btn-more{
   background-color: #03a9f4;
   color: #fff;
+  font-family:'Amiri'!important;
   width: 160px;
   height: 22px;
   padding: 8px 0px;

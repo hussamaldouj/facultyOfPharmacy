@@ -348,7 +348,7 @@ body{
     line-height: 1.5;
     color: rgb(32, 31, 104);
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid #02116e;;
     border-radius: 0.25rem;
     transition: border-color .35s ease-in-out,box-shadow .35s ease-in-out;
 }

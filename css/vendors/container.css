@@ -112,7 +112,7 @@ align-self: center;
 
 }
 .title-grid{
-  color: rgb(2, 53, 124);
+  color: rgb(246 153 47);;
   width: 160px;
   height: 35px;
   margin-block-start: 15px;
@@ -124,7 +124,7 @@ align-self: center;
   grid-area: head;
 }
 .btn-more{
-  background-color: #071b5a;
+  background-color: rgb(246 153 47);;
   color: #fff;
   width: 160px;
   height: 35px;

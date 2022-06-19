@@ -81,14 +81,14 @@
     }
     ul li a{
         text-decoration: none;
-        color: #03a9f4 ;
+        color: #ffd792 ;
         height: 55px;
         font-weight: 600;
         line-height: 50px;
         display: flex;
     }
     ul li a i{
-        color: #9e9e9e;
+        color: rgb(2, 53, 124);
 
     }
     ul li  a span i{

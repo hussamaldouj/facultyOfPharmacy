@@ -1,12 +1,17 @@
 .nav_bar{
-    height: 105px;
-    background-color:#02116e;;
+    height: 75px;
+    background-color: rgb(2, 53, 124);
     position: sticky;
     top: 15px;
     z-index: 2;
     margin-top: 0px;
+    border-radius: 15px;
     box-shadow: -4px -4px 10px #160d1473, 4px 4px 10px;
     backdrop-filter: blur(10px);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .img_nav{
     background: url(/img/logo.png);
@@ -17,8 +22,8 @@
 }
 .dropdown{
     position: fixed;
-list-style-type: none;
-    top: 30%;
+    list-style-type: none;
+    top:20%;
     right: 2%;
 }
 .dropdown-content {
@@ -91,7 +96,7 @@ list-style-type: none;
         width: 40px;
     }
     ul li a span:nth-child(2){
-         margin: 0px;
+         margin: 5px;
          display: grid;
          place-items: center;
          border-style: outset;
@@ -132,7 +137,7 @@ list-style-type: none;
         margin-right: 0px;
     }
     ul.icon_mobile{
-        right: -40px;
+        right: -15px;
     }
 }
 

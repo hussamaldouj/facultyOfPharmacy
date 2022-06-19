@@ -683,11 +683,11 @@ align-self: center;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #fd3535;
-  background: linear-gradient(147deg, #fe8a39  0%, #fd3838 74%);
+  border: 1px solid #0d6d99;
+  background: #0d6d99;
 }
 .content button:hover{
-  background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+  background: #0d6d99;
 }
 .sliders{
   position: absolute;
@@ -718,7 +718,7 @@ align-self: center;
   left: 0;
   height: 100%;
   width: -100%;
-  background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+  background: #191932;
   border-radius: 10px;
   transform: scaleX(0);
   transition: transform .6s;

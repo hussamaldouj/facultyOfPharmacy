@@ -732,33 +732,22 @@ input[type="checkbox"]{
   width: 100%;
 }
 @media only screen and (max-width: 768px){
-.inner-part {
-  position: absolute;
-  display: flex!important;
-  height: 300px!important;
-  width: 100%;
-  padding: 0 0px;
-  flex-wrap: wrap!important;
-}
-.inner-part .img {
-  height: 100%!important;
-  width: 100%!important;
-  flex: 1 0 auto!important;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 2px 3px 15px rgb(252 56 56 / 10%);
-}
-.content .text {
-  color: #4e4a67;
-  font-size: 19px;
-  margin-bottom: 30px;
-  line-height: 1.5em;
-  text-align: justify!important;
-}
-.sliders{
-  position: absolute;
-  bottom: 10px;
-  left: calc(18%/2);
-  z-index: 12;
-}
+  .inner-part {
+    display: flex!important;
+    height: 300px!important;
+    width: 100%;
+    padding: 0 0px;
+    flex-wrap: wrap!important;
+  }
+  .inner-part .img {
+    height: 100%!important;
+    width: 100%!important;
+    flex: 1 0 auto!important;
+  }
+  .content .text {
+    text-align: justify!important;
+  }
+  .sliders{
+    left: calc(18%/2);
+  }
 }
